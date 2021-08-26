@@ -33,7 +33,6 @@ background-color: lightgray;
         display: flex;
     }.news-details{
         width: 70%;
-        height: 200px;
         /* background-color:#9ea09a; */
         font-family: Segoe UI;
         padding-left: 20px;
