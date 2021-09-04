@@ -30,7 +30,7 @@ const Main = () => {
             <h1>All News</h1>
             {
 
-                articles.length===0?(<h1>No Data Found</h1>):
+                // articles.length===0?(<h1>No Data Found</h1>):
             articles.map((article,index)=>(
             <div key={index} className="article">
 
