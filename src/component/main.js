@@ -14,7 +14,6 @@ const Main = () => {
     }
     const searchNews=()=>{
         const url=`https://newsapi.org/v2/everything?q=${search}&apiKey=aae68af0b31246698ac1bf3ba6f12a69`;
-       // const url=`https://newsapi.org/v2/everything?q=${search}&apiKey=aae68af0b31246698ac1bf3ba6f12a69`;
         fetch(url).then((res)=>res.json()).then((data)=>{
         setArticle(data.articles);
         }).catch((error)=>{
@@ -31,7 +30,7 @@ const Main = () => {
             <h1>All News</h1>
             {
 
-                //articles.length===0?(<h1>No Data Found</h1>):
+                articles.length===0?(<h1>No Data Found</h1>):
             articles.map((article,index)=>(
             <div key={index} className="article">
 
