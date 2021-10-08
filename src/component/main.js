@@ -15,7 +15,7 @@ const Main = () => {
     const searchNews=()=>{
         const url=`https://newsapi.org/v2/everything?q=${search}&apiKey=aae68af0b31246698ac1bf3ba6f12a69`;
         fetch(url).then((res)=>res.json()).then((data)=>{
-        setArticle(data.articles);
+        setArticle(data);
         }).catch((error)=>{
             console.log(error);
         })
